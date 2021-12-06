@@ -20,6 +20,27 @@
 </p>
 
 # How to use
+
+## In your terminal
 ```bash
-npx speed-cloudflare-cli
+npx @iomechs/speed-cloudflare-cli
+```
+
+## In your projects
+```bash
+npm install @iomechs/speed-cloudflare-cli
+```
+
+```js
+const speedTest = require('@iomechs/speed-cloudflare-cli');
+
+
+const myFn  = async () => {
+  const {downloadSpeed, uploadSpeed} = speedTest();
+  console.log(`${downloadSpeed} Mbps`);
+  console.log(`${uploadSpeed} Mbps`);
+}
+
+myFn();
+
 ```
